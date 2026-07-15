@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Motherland English School, Bangalore â€” Nurturing Young Minds. Building Future Leaders. Premier English-medium school on Bannerghatta Road with academic excellence and holistic development.">
+<meta name="keywords" content="Motherland English School, Bangalore, CBSE school, Bannerghatta Road, best school Bangalore, admissions 2025">
+<meta property="og:title" content="Motherland English School â€” Nurturing Young Minds. Building Future Leaders.">
+<meta property="og:description" content="Premier English-medium school in Bangalore offering Pre-Primary through High School education.">
+<meta property="og:url" content="https://mles.co.in">
+<title>Motherland English School | Nurturing Young Minds. Building Future Leaders.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <div class="loader-inner">
+    <svg class="loader-emblem" width="56" height="56" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" stroke="#C7A248" stroke-width="1.5"/>
+      <path d="M20 7 L30 13 L30 25 L20 31 L10 25 L10 13 Z" stroke="#C7A248" stroke-width="1.2" fill="rgba(199,162,72,0.12)"/>
+      <text x="20" y="22" text-anchor="middle" font-family="Georgia" font-size="11" fill="#C7A248" font-weight="bold">M</text>
+    </svg>
+    <p class="loader-school">Motherland English School</p>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- â•â• HEADER â•â• -->
+<header id="header">
+  <nav class="nav-container">
+    <a href="#home" class="logo">
+      <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="#C7A248" stroke-width="1.5"/>
+        <path d="M20 7 L30 13 L30 25 L20 31 L10 25 L10 13 Z" stroke="#C7A248" stroke-width="1.2" fill="rgba(199,162,72,0.12)"/>
+        <text x="20" y="22" text-anchor="middle" font-family="Georgia" font-size="11" fill="#C7A248" font-weight="bold">M</text>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">Motherland</span>
+        <span class="logo-sub">English School</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#academics" class="nav-link">Academics</a></li>
+      <li><a href="#facilities" class="nav-link">Facilities</a></li>
+      <li><a href="#admissions" class="nav-link">Admissions</a></li>
+      <li><a href="#student-life" class="nav-link">Student Life</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#admissions" class="btn-apply magnetic-btn">Apply Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#academics" class="mob-link">Academics</a></li>
+      <li><a href="#facilities" class="mob-link">Facilities</a></li>
+      <li><a href="#admissions" class="mob-link">Admissions</a></li>
+      <li><a href="#student-life" class="mob-link">Student Life</a></li>
+      <li><a href="#achievements" class="mob-link">Achievements</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+      <li><a href="#admissions" class="mob-link mob-apply">Apply Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- â•â• HERO â•â• -->
+<section id="home" class="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-bg">
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-floats">
+    <div class="float-el f1"></div>
+    <div class="float-el f2"></div>
+    <div class="float-el f3"></div>
+  </div>
+  <div class="hero-content" id="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyeline"></span>
+      <span>Established 1989 &bull; Bangalore</span>
+      <span class="eyeline"></span>
+    </div>
+    <h1 class="hero-h1">
+      <span class="line-mask"><span class="reveal-line">Where Learning</span></span>
+      <span class="line-mask"><em class="reveal-line gold-em">Inspires Excellence</em></span>
+    </h1>
+    <p class="hero-sub reveal-fade">Empowering students through academic excellence, character building,<br class="desk-br"> innovation, and holistic development in a nurturing environment.</p>
+    <div class="hero-btns reveal-fade">
+      <a href="#admissions" class="btn-primary magnetic-btn">
+        Apply Now
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#facilities" class="btn-outline magnetic-btn">Explore Campus</a>
+    </div>
+    <div class="hero-stats reveal-fade">
+      <div class="stat-item">
+        <div class="snum">1989</div>
+        <div class="slbl">Established</div>
+      </div>
+      <div class="sdiv"></div>
+      <div class="stat-item">
+        <div class="snum counter-h" data-target="1000" data-suffix="+">0+</div>
+        <div class="slbl">Students</div>
+      </div>
+      <div class="sdiv"></div>
+      <div class="stat-item">
+        <div class="snum counter-h" data-target="50" data-suffix="+">0+</div>
+        <div class="slbl">Expert Faculty</div>
+      </div>
+      <div class="sdiv"></div>
+      <div class="stat-item">
+        <div class="sico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="slbl">Safe Campus</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-bar"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- â•â• WHY CHOOSE US â•â• -->
+<section id="why" class="section why-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Why Choose Us</p>
+      <h2 class="sec-title reveal-up">A Foundation Built on<br><em>Excellence &amp; Values</em></h2>
+      <p class="sec-desc reveal-up">We believe every child is unique. Our approach nurtures individual strengths while fostering a love for lifelong learning.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal-card" style="--d:0s">
+        <div class="wc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Academic Excellence</h3>
+        <p>Rigorous curriculum designed to inspire critical thinking, creativity, and a deep love for learning across all levels.</p>
+      </div>
+      <div class="why-card reveal-card" style="--d:0.08s">
+        <div class="wc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Experienced Faculty</h3>
+        <p>Dedicated educators with years of expertise, committed to guiding each student toward their full potential.</p>
+      </div>
+      <div class="why-card reveal-card" style="--d:0.16s">
+        <div class="wc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Holistic Development</h3>
+        <p>Beyond academics, we nurture character, creativity, sports, arts, and emotional intelligence for complete growth.</p>
+      </div>
+      <div class="why-card reveal-card" style="--d:0.24s">
+        <div class="wc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Technology-Enabled</h3>
+        <p>Smart classrooms and digital tools seamlessly integrated to prepare students for the modern world.</p>
+      </div>
+      <div class="why-card reveal-card" style="--d:0.32s">
+        <div class="wc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Safe Campus</h3>
+        <p>A secure, nurturing environment where every child feels protected, valued, and free to grow.</p>
+      </div>
+      <div class="why-card reveal-card" style="--d:0.40s">
+        <div class="wc-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Leadership Development</h3>
+        <p>We cultivate confidence, responsibility, and decision-making skills that build tomorrow's leaders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• ABOUT â•â• -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-col reveal-left">
+        <div class="about-img-frame">
+          <div class="about-img-inner"></div>
+          <div class="about-badge">
+            <div class="ab-num">35+</div>
+            <div class="ab-txt">Years of<br>Excellence</div>
+          </div>
+          <div class="about-img-border"></div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="sec-title">A Legacy of Learning<br><em>Since 1989</em></h2>
+        <p class="about-para">Motherland English School was founded in 1989 with a singular mission â€” to provide quality English-medium education that is accessible, inclusive, and transformative. Nestled in the heart of Bangalore's Bannerghatta Road, we have been a cornerstone of the community for over three decades.</p>
+        <p class="about-para">Our philosophy is rooted in the belief that education must nurture the whole child â€” intellect, character, creativity, and compassion. We combine rigorous academics with an environment that celebrates each student's unique potential.</p>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body"><span class="tl-yr">1989</span><p>Founded with a vision to make quality education accessible in South Bangalore.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body"><span class="tl-yr">2000s</span><p>Expanded to include Middle and High School programs, growing to 500+ students.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body"><span class="tl-yr">2015</span><p>Introduced Smart Classrooms and a comprehensive digital learning curriculum.</p></div>
+          </div>
+          <div class="tl-item last">
+            <div class="tl-dot gold-dot"></div>
+            <div class="tl-body"><span class="tl-yr gold-yr">Today</span><p>A thriving community of 1000+ students, shaping confident and compassionate leaders.</p></div>
+          </div>
+        </div>
+        <a href="#admissions" class="btn-primary magnetic-btn">
+          Join Our Community
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• MISSION & VISION â•â• -->
+<section id="mission" class="section mv-section">
+  <div class="mv-bg"></div>
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow light-ey reveal-up">Our Purpose</p>
+      <h2 class="sec-title light-title reveal-up">Guiding Principles That<br><em>Define Us</em></h2>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card reveal-up" style="--d:0s">
+        <div class="mv-ico">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="mv-badge">Vision</div>
+        <h3>To Be the Beacon of Educational Excellence</h3>
+        <p>To be recognized as Bangalore's most trusted institution â€” a school where every child discovers their purpose, builds their character, and develops the wisdom to lead with integrity.</p>
+      </div>
+      <div class="mv-card reveal-up" style="--d:0.15s">
+        <div class="mv-ico">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="mv-badge">Mission</div>
+        <h3>Nurturing Every Child to Their Fullest Potential</h3>
+        <p>To deliver a holistic, values-driven education that balances academic rigour with creative freedom, ethical grounding, and emotional well-being â€” empowering students to thrive as responsible global citizens.</p>
+      </div>
+    </div>
+    <div class="values-row reveal-up">
+      <span class="val-pill">Integrity</span>
+      <span class="val-pill">Excellence</span>
+      <span class="val-pill">Compassion</span>
+      <span class="val-pill">Curiosity</span>
+      <span class="val-pill">Discipline</span>
+      <span class="val-pill">Innovation</span>
+      <span class="val-pill">Community</span>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• ACADEMICS â•â• -->
+<section id="academics" class="section acad-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Academic Programs</p>
+      <h2 class="sec-title reveal-up">A Journey of Learning<br><em>At Every Stage</em></h2>
+      <p class="sec-desc reveal-up">From Pre-Primary to High School, each programme is carefully crafted for the developmental needs of every age group.</p>
+    </div>
+    <div class="acad-timeline">
+      <div class="acad-item reveal-up" style="--d:0s">
+        <div class="acad-mark"><div class="acad-dot"></div><div class="acad-line"></div></div>
+        <div class="acad-card">
+          <div class="acad-tag">Stage 01</div>
+          <h3>Pre-Primary</h3>
+          <p class="acad-gr">Nursery &bull; LKG &bull; UKG</p>
+          <p>A gentle, play-based introduction fostering curiosity, communication, and social skills through structured activities and exploration.</p>
+          <ul class="acad-list">
+            <li>Play-based curriculum</li>
+            <li>Language &amp; numeracy foundations</li>
+            <li>Creative expression</li>
+            <li>Social-emotional learning</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acad-item reveal-up" style="--d:0.1s">
+        <div class="acad-mark"><div class="acad-dot"></div><div class="acad-line"></div></div>
+        <div class="acad-card">
+          <div class="acad-tag">Stage 02</div>
+          <h3>Primary School</h3>
+          <p class="acad-gr">Classes I &mdash; V</p>
+          <p>Building strong foundations in English, Mathematics, Science, and Social Studies, combined with arts, sports, and value education.</p>
+          <ul class="acad-list">
+            <li>Core subject mastery</li>
+            <li>Reading &amp; writing proficiency</li>
+            <li>STEM introduction</li>
+            <li>Character education</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acad-item reveal-up" style="--d:0.2s">
+        <div class="acad-mark"><div class="acad-dot"></div><div class="acad-line"></div></div>
+        <div class="acad-card">
+          <div class="acad-tag">Stage 03</div>
+          <h3>Middle School</h3>
+          <p class="acad-gr">Classes VI &mdash; VIII</p>
+          <p>Deepening academic knowledge with subject specialization, project-based learning, and leadership opportunities.</p>
+          <ul class="acad-list">
+            <li>Subject specialization</li>
+            <li>Laboratory sciences</li>
+            <li>Digital literacy</li>
+            <li>Leadership programmes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acad-item reveal-up" style="--d:0.3s">
+        <div class="acad-mark"><div class="acad-dot gold-dot"></div></div>
+        <div class="acad-card gold-card">
+          <div class="acad-tag">Stage 04</div>
+          <h3>High School</h3>
+          <p class="acad-gr">Classes IX &mdash; X</p>
+          <p>Rigorous preparation for board examinations with expert mentorship, study support, and career counselling.</p>
+          <ul class="acad-list">
+            <li>Board exam preparation</li>
+            <li>Advanced STEM</li>
+            <li>Career counselling</li>
+            <li>Competitive exam support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• FACILITIES â•â• -->
+<section id="facilities" class="section fac-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Campus Facilities</p>
+      <h2 class="sec-title reveal-up">World-Class Spaces<br><em>Built for Growth</em></h2>
+      <p class="sec-desc reveal-up">Our campus is designed to be a stimulating, safe, and inspiring environment where students thrive inside and outside the classroom.</p>
+    </div>
+    <div class="fac-grid">
+      <div class="fac-card fc-large reveal-up" style="--d:0s">
+        <div class="fc-img fc-lib"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>Library &amp; Reading Centre</h3>
+          <p>A curated collection of 5,000+ books fostering a lifelong love for reading and learning.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal-up" style="--d:0.08s">
+        <div class="fc-img fc-sci"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
+          <h3>Science Labs</h3>
+          <p>State-of-the-art Physics, Chemistry, and Biology labs for hands-on learning.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal-up" style="--d:0.16s">
+        <div class="fc-img fc-comp"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Computer Laboratory</h3>
+          <p>High-speed internet connected labs with latest software for digital literacy and coding.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal-up" style="--d:0.24s">
+        <div class="fc-img fc-class"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Smart Classrooms</h3>
+          <p>Interactive digital boards and audio-visual systems for immersive, engaging lessons.</p>
+        </div>
+      </div>
+      <div class="fac-card fc-large reveal-up" style="--d:0.32s">
+        <div class="fc-img fc-play"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></div>
+          <h3>Playground &amp; Sports</h3>
+          <p>Spacious facilities for cricket, football, athletics, and team sports encouraging physical well-being.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal-up" style="--d:0.40s">
+        <div class="fc-img fc-act"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+          <h3>Activity Rooms</h3>
+          <p>Dedicated spaces for music, dance, art, and drama nurturing creative expression.</p>
+        </div>
+      </div>
+      <div class="fac-card reveal-up" style="--d:0.48s">
+        <div class="fc-img fc-safe"></div>
+        <div class="fc-over">
+          <div class="fc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Safety Infrastructure</h3>
+          <p>CCTV surveillance, trained security, and strict safety protocols at all times.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• STUDENT LIFE â•â• -->
+<section id="student-life" class="section sl-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Student Life</p>
+      <h2 class="sec-title reveal-up">Beyond the Classroom,<br><em>Life Flourishes</em></h2>
+      <p class="sec-desc reveal-up">A vibrant student life programme celebrating creativity, sportsmanship, cultural expression, and community spirit.</p>
+    </div>
+    <div class="masonry">
+      <div class="mi mi-tall reveal-up" style="--d:0s"><div class="mi-bg mi-music"></div><div class="mi-over"><div class="mi-tag">Music</div><h3>Music &amp; Performing Arts</h3><p>Vocal and instrumental training building confidence and artistic expression.</p></div></div>
+      <div class="mi reveal-up" style="--d:0.07s"><div class="mi-bg mi-dance"></div><div class="mi-over"><div class="mi-tag">Dance</div><h3>Dance &amp; Movement</h3><p>Classical and contemporary dance celebrating cultural diversity.</p></div></div>
+      <div class="mi reveal-up" style="--d:0.14s"><div class="mi-bg mi-sports"></div><div class="mi-over"><div class="mi-tag">Sports</div><h3>Sports &amp; Athletics</h3><p>Building teamwork, discipline, and resilience through competitive sports.</p></div></div>
+      <div class="mi mi-wide reveal-up" style="--d:0.21s"><div class="mi-bg mi-stem"></div><div class="mi-over"><div class="mi-tag">STEM</div><h3>STEM Innovation Club</h3><p>Robotics, coding, science fairs, and innovation challenges for future tech leaders.</p></div></div>
+      <div class="mi reveal-up" style="--d:0.28s"><div class="mi-bg mi-art"></div><div class="mi-over"><div class="mi-tag">Art</div><h3>Visual Arts &amp; Craft</h3><p>Painting, sculpture, and craft sessions awakening imagination.</p></div></div>
+      <div class="mi reveal-up" style="--d:0.35s"><div class="mi-bg mi-fest"></div><div class="mi-over"><div class="mi-tag">Culture</div><h3>Festivals &amp; Celebrations</h3><p>Annual day, cultural events, and festivals building school spirit.</p></div></div>
+      <div class="mi mi-tall reveal-up" style="--d:0.42s"><div class="mi-bg mi-trips"></div><div class="mi-over"><div class="mi-tag">Experiences</div><h3>Field Trips &amp; Excursions</h3><p>Educational visits bringing classroom learning to life in the real world.</p></div></div>
+      <div class="mi mi-wide reveal-up" style="--d:0.49s"><div class="mi-bg mi-comp"></div><div class="mi-over"><div class="mi-tag">Competitions</div><h3>Competitions &amp; Olympiads</h3><p>Inter-school tournaments, olympiads, and debates sharpening excellence.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• ACHIEVEMENTS â•â• -->
+<section id="achievements" class="section ach-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Achievements</p>
+      <h2 class="sec-title reveal-up">A Track Record of<br><em>Excellence &amp; Pride</em></h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card reveal-up" style="--d:0s">
+        <div class="ach-num counter" data-target="98" data-suffix="%">0%</div>
+        <div class="ach-lbl">Board Exam Pass Rate</div>
+        <p>Consistent academic excellence across all classes and subjects.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--d:0.1s">
+        <div class="ach-num counter" data-target="500" data-suffix="+">0+</div>
+        <div class="ach-lbl">Student Awards</div>
+        <p>Individual and team recognitions at district, state, and national levels.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--d:0.2s">
+        <div class="ach-num counter" data-target="120" data-suffix="+">0+</div>
+        <div class="ach-lbl">Competitions Won</div>
+        <p>Academic olympiads, cultural events, and sports tournaments.</p>
+      </div>
+      <div class="ach-card reveal-up" style="--d:0.3s">
+        <div class="ach-num counter" data-target="35" data-suffix="+">0+</div>
+        <div class="ach-lbl">Years of Service</div>
+        <p>Actively contributing to the Bangalore South community since 1989.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• TESTIMONIALS â•â• -->
+<section id="testimonials" class="section testi-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Testimonials</p>
+      <h2 class="sec-title reveal-up">Voices That<br><em>Inspire Us</em></h2>
+    </div>
+    <div class="swiper testi-swiper reveal-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="tq">&ldquo;</div>
+            <p>Motherland English School has been a transformative experience for our daughter. The teachers are not just educators &mdash; they are mentors who genuinely care about every child's well-being and growth.</p>
+            <div class="ta"><div class="tav">P</div><div><div class="tn">Priya Raghunathan</div><div class="tr">Parent &mdash; Class VII</div></div></div>
+            <div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="tq">&ldquo;</div>
+            <p>I have been a student here since Class I, and this school has shaped who I am. The faculty pushes you to think, the environment is warm, and the opportunities to participate are endless.</p>
+            <div class="ta"><div class="tav">A</div><div><div class="tn">Arjun Krishnamurthy</div><div class="tr">Student &mdash; Class X</div></div></div>
+            <div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="tq">&ldquo;</div>
+            <p>The level of discipline, values education, and academic rigour at Motherland is exceptional. We transferred our son here two years ago and the improvement in his confidence and grades has been remarkable.</p>
+            <div class="ta"><div class="tav">S</div><div><div class="tn">Srinivasa Murthy</div><div class="tr">Parent &mdash; Class V</div></div></div>
+            <div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="tq">&ldquo;</div>
+            <p>The holistic approach here is what sets Motherland apart. My child does not just score well &mdash; she questions, explores, creates, and leads. That is priceless for any parent.</p>
+            <div class="ta"><div class="tav">M</div><div><div class="tn">Meena Subramaniam</div><div class="tr">Parent &mdash; Class IX</div></div></div>
+            <div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="tq">&ldquo;</div>
+            <p>Participating in the school's science olympiad was one of the best experiences of my life. Our teachers prepared us incredibly well, and we brought home the district trophy.</p>
+            <div class="ta"><div class="tav">R</div><div><div class="tn">Rahul Venkatesh</div><div class="tr">Student &mdash; Class VIII</div></div></div>
+            <div class="ts">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• ADMISSIONS CTA â•â• -->
+<section id="admissions" class="section cta-section">
+  <div class="cta-bg-anim"></div>
+  <div class="container">
+    <div class="cta-inner reveal-up">
+      <p class="eyebrow light-ey">2025&ndash;26 Academic Year</p>
+      <h2 class="cta-h2">Admissions<br><em>Now Open</em></h2>
+      <p class="cta-sub">Secure your child's place at Motherland English School and invest in a future of excellence, values, and limitless opportunity.</p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn-gold magnetic-btn">
+          Book a Campus Visit
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://mles.co.in" target="_blank" rel="noopener noreferrer" class="btn-outline-lt magnetic-btn">Apply Online</a>
+      </div>
+      <div class="cta-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Limited seats available. Enquire early to avoid disappointment.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â• CONTACT â•â• -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="sec-head">
+      <p class="eyebrow reveal-up">Get in Touch</p>
+      <h2 class="sec-title reveal-up">We&rsquo;d Love to<br><em>Hear from You</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="ci-block">
+          <div class="ci-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Address</h4><p>No.6, 5th Main Road, New Gurappanpalya,<br>Bannerghatta Road Cross, Bangalore &ndash; 560029</p></div>
+        </div>
+        <div class="ci-block">
+          <div class="ci-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg></div>
+          <div><h4>Phone</h4><p><a href="tel:+918041234567">+91 80 4123 4567</a></p></div>
+        </div>
+        <div class="ci-block">
+          <div class="ci-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><h4>Email</h4><p><a href="mailto:info@mles.co.in">info@mles.co.in</a></p></div>
+        </div>
+        <div class="ci-block">
+          <div class="ci-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><h4>Working Hours</h4><p>Monday &ndash; Saturday: 8:00 AM &ndash; 4:30 PM<br>Sunday: Closed</p></div>
+        </div>
+      </div>
+      <div class="contact-form reveal-right">
+        <form id="enq-form" novalidate>
+          <h3>Quick Enquiry</h3>
+          <div class="fg-row">
+            <div class="fg"><label for="pname">Parent Name</label><input type="text" id="pname" placeholder="Your full name" required></div>
+            <div class="fg"><label for="sname">Student Name</label><input type="text" id="sname" placeholder="Student's name" required></div>
+          </div>
+          <div class="fg-row">
+            <div class="fg"><label for="ph">Phone Number</label><input type="tel" id="ph" placeholder="+91 XXXXX XXXXX" required></div>
+            <div class="fg">
+              <label for="gr">Grade</label>
+              <select id="gr" required>
+                <option value="" disabled selected>Select grade</option>
+                <option>Nursery</option><option>LKG</option><option>UKG</option>
+                <option>Class I</option><option>Class II</option><option>Class III</option>
+                <option>Class IV</option><option>Class V</option><option>Class VI</option>
+                <option>Class VII</option><option>Class VIII</option><option>Class IX</option><option>Class X</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg"><label for="em">Email</label><input type="email" id="em" placeholder="your@email.com"></div>
+          <div class="fg"><label for="msg">Message</label><textarea id="msg" rows="4" placeholder="Any specific questions or information..."></textarea></div>
+          <button type="submit" class="btn-primary btn-full magnetic-btn">
+            Send Enquiry
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-ok" id="form-ok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Thank you! We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+      <div class="contact-map reveal-up">
+        <iframe title="Motherland English School Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0!2d77.5946!3d12.8700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae152e7ba44c99%3A0x2a7f6f5e6b7e8b3!2sNew%20Gurappanapalya%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Bannerghatta Road, Bangalore &ndash; 560029
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- â•â• FOOTER â•â• -->
+<footer class="site-footer">
+  <div class="ft-top">
+    <div class="container">
+      <div class="ft-grid">
+        <div class="ft-brand">
+          <div class="footer-logo">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#C7A248" stroke-width="1.5"/><path d="M20 7 L30 13 L30 25 L20 31 L10 25 L10 13 Z" stroke="#C7A248" stroke-width="1.2" fill="rgba(199,162,72,0.12)"/><text x="20" y="22" text-anchor="middle" font-family="Georgia" font-size="11" fill="#C7A248" font-weight="bold">M</text></svg>
+            <div><span class="logo-name">Motherland</span><span class="logo-sub">English School</span></div>
+          </div>
+          <p class="ft-tag">&ldquo;Nurturing Young Minds.<br>Building Future Leaders.&rdquo;</p>
+          <div class="ft-social">
+            <a href="#" aria-label="Facebook" class="soc"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram" class="soc"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="YouTube" class="soc"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+          </div>
+        </div>
+        <div class="ft-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#student-life">Student Life</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Admissions</h4>
+          <ul>
+            <li><a href="#admissions">Apply Now</a></li>
+            <li><a href="#contact">Book Campus Visit</a></li>
+            <li><a href="#contact">Enquiry Form</a></li>
+            <li><a href="https://mles.co.in" target="_blank" rel="noopener noreferrer">School Website</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Contact</h4>
+          <address>
+            <p>No.6, 5th Main Road, New Gurappanpalya,<br>Bannerghatta Road Cross,<br>Bangalore &ndash; 560029</p>
+            <p><a href="mailto:info@mles.co.in">info@mles.co.in</a></p>
+            <p><a href="https://mles.co.in" target="_blank" rel="noopener noreferrer">www.mles.co.in</a></p>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="container">
+      <p>&copy; <span id="yr"></span> Motherland English School, Bangalore. All rights reserved.</p>
+      <p>Designed for educational excellence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
